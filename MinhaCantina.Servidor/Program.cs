@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using MinhaCantina.Servidor.Dados;
+
 namespace MinhaCantina.Servidor
 {
 	public class Program
@@ -13,6 +16,10 @@ namespace MinhaCantina.Servidor
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
+
+			var conexaoString = builder.Configuration["BANCODADOS_URI"];
+
+			builder.Services.AddMySql<MinhaCantinaContexto>(conexaoString, ServerVersion.AutoDetect(conexaoString));
 
 			var app = builder.Build();
 

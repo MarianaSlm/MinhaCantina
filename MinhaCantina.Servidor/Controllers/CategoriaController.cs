@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MinhaCantina.Biblioteca.Modelos;
 
 namespace MinhaCantina.Servidor.Controllers;
