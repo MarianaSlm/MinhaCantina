@@ -3,6 +3,23 @@
 <PageTitle>Entrar com a sua conta</PageTitle>
 
 <h3>Login</h3>
+@*1 tag > 1 campo para username, 1 campo para senha, 1 botâõ  *@
+<form class=" p-3 border border-5 rounded" style="max-width: 400px;"> 
+	<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Username</label>
+		<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="user name" maxlength="25">
+	</div>
+
+	<div class="mb-3">
+		<label for="exampleFormControlInput1" class="form-label">Senha</label>
+		<input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Senha" maxlength="10">
+	</div>
+
+	<div>
+		<button class="btn btn-primary">Entrar</button>
+	</div>
+</form>
+
 
 @code {
 
