@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MinhaCantina.Biblioteca.DTOs
 {
-	class CategoriaRegistroDto
+	public class CategoriaRegistroDto
 	{
 		public string Nome { get; set; } // Propriedade
 	}
